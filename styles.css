@@ -1,7 +1,7 @@
 /* Header */
 
 header {
-  height: 80px;
+  height: 50px;
   width: 100%;
   background-color: rgb(231, 89, 189);
   border-bottom: solid 1px black;
@@ -10,7 +10,8 @@ header {
 }
 
 header img {
-  height: 80px;
+  height: 100%;
+      transform: scaleX(-1);
   margin-left: 25px;
   flex-shrink: 0;
 }
