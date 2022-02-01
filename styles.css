@@ -1,287 +1,281 @@
 /* Header */
 
 header {
-    height: 80px;
-    width: 100%;
-    background-color: rgb(231, 89, 189);
-    border-bottom: solid 1px black;
-    display: flex;
-    justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(231, 89, 189);
+  border-bottom: solid 1px black;
+  display: flex;
+  justify-content: space-between;
 }
 
 header img {
-    height: 80px;
-    margin-left: 25px;
-    flex-shrink: 0;
+  height: 80px;
+  margin-left: 25px;
+  flex-shrink: 0;
 }
 .wiener {
-    max-width: 500px;
-    font-family: 'Parisienne';
-    font-size: 16px;
-    margin-left: 100px;
-    display: flex;
-    align-items: end;
-    flex-wrap: wrap-reverse;
+  max-width: 600px;
+  font-family: "Parisienne";
+  font-size: 16px;
+  margin-left: 100px;
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap-reverse;
 }
 .wiener p {
-    margin-bottom: 0;
-    display: inline;
-    margin: 0 20px;
+  margin-bottom: 0;
+  display: inline;
+  margin: 0 20px;
+}
+@media only screen and (max-width: 970px) {
+  .wiener-6 {
+    visibility: hidden;
+  }
 }
 @media only screen and (max-width: 880px) {
-    .wiener-5 {
-        visibility: hidden;
-    }
+  .wiener-5 {
+    visibility: hidden;
+  }
 }
 @media only screen and (max-width: 780px) {
-    .wiener-4 {
-        visibility: hidden;
-    }
+  .wiener-4 {
+    visibility: hidden;
+  }
 }
 @media only screen and (max-width: 690px) {
-    .wiener-3 {
-        visibility: hidden;
-    }
+  .wiener-3 {
+    visibility: hidden;
+  }
 }
 @media only screen and (max-width: 600px) {
-    .wiener-2 {
-        visibility: hidden;
-    }
+  .wiener-2 {
+    visibility: hidden;
+  }
 }
 @media only screen and (max-width: 550px) {
-    .wiener-1 {
-        visibility: hidden;
-    }
+  .wiener-1 {
+    visibility: hidden;
+  }
 }
-    
+
 .nav {
-    display: flex;
+  display: flex;
 }
 .nav a {
-    margin: 18px;
-    align-self: center;
-    flex-shrink: 0;
+  margin: 18px;
+  align-self: center;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+.nav div {
+  background: black;
+  height: 5px;
+  width: 30px;
+  margin: 2px;
 }
 
 /* Banner */
 
 .banner {
-    height: 500px;
-    background-image: url("https://karlstad.se/imagevault/publishedmedia/ra528180d66treuzgc2t/shutterstock_520752277.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
+  height: 500px;
+  background-image: url("https://karlstad.se/imagevault/publishedmedia/ra528180d66treuzgc2t/shutterstock_520752277.jp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 }
 
 .hero {
-    font-family: Oswald, sans-serif;
-    max-height: 300px;
-    width: 400px;
-    background-color: white;
-    opacity: 0.9;
-    border: 1px solid black;
-    display:flex;
-    text-align: center;
-    flex-flow: column wrap;
-    margin-left: 50px;
-    margin-right: 50px;
-    align-content: center;
-    padding: 30px;
-    border-radius: 10px;
+  font-family: Oswald, sans-serif;
+  max-height: 300px;
+  width: 400px;
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid black;
+  display: flex;
+  text-align: center;
+  flex-flow: column wrap;
+  margin-left: 50px;
+  margin-right: 50px;
+  align-content: center;
+  padding: 30px;
+  border-radius: 10px;
 }
 
 .hero h1 {
-    font-size: 40px;
-    text-decoration: underline;
+  font-size: 40px;
+  text-decoration: underline;
 }
 .hero p {
-    font-size: 28px;
-    margin-top: 0;
-    font-style: italic;
+  font-size: 28px;
+  margin-top: 0;
+  font-style: italic;
 }
-
 
 /* Offerings */
 
 .offerings {
-    height: 200px;
-    display: flex;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: white;
+  height: 200px;
+  display: flex;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
 }
 
 .offerings div {
-    height: 75px;
-    text-align: center;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./Screenshot\ 2021-11-24\ at\ 15.46.53.png);
-    border-top: black 2px solid;
-    border-bottom: black 2px solid;
+  height: 75px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/green-pattern.png);
+  background-size: contain;
+  border-top: black 2px solid;
+  border-bottom: black 2px solid;
 }
 
 .offerings a {
-    border: black solid 1px;
-    padding: 10px;
-    text-transform: uppercase;
-    font-family: 'Manrope', 'sans-serif';
-    background-color: rgb(216, 106, 238);
-    color: black;
+  border: black solid 1px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Manrope", "sans-serif";
+  background-color: rgb(216, 106, 238);
+  color: black;
 }
 
 /* Schedule */
 
 .schedule {
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(77, 204, 243);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(77, 204, 243);
 }
 
 .schedule h2 {
-    font-family: 'Oswald';
-    font-size: 40px;
-    text-transform: uppercase;
-    margin: 20px auto;
+  font-family: "Oswald";
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 20px auto;
 }
 .week-table {
-    border: 1px solid black;
-    display: flex;
-    margin-bottom: 20px;
+  border: 1px solid black;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .week-table div {
-    height: 100px;
-    width: 150px;
-    font-family: 'Oswald';
-    text-align: center;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(255, 164, 238);
+  height: 100px;
+  width: 150px;
+  font-family: "Oswald";
+  text-align: center;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 164, 238);
 }
 
 .week-table h3 {
-    size: 22px;
-    margin-bottom: 0;
-    text-decoration: underline;
+  size: 22px;
+  margin-bottom: 0;
+  text-decoration: underline;
 }
 .week-table p {
-    font-size: 16px;
-    margin-top: 0;
+  font-size: 16px;
+  margin-top: 0;
 }
 @media only screen and (max-width: 1050px) {
-    .schedule {
-        height: 450px;
-    }
-    .week-table {
-        flex-direction: column;
-    }
-    .week-table div {
-        flex-direction: row;
-        height: 40px;
-        width: 400px;
-        justify-content: space-around;
-    }
-    .week-table h3 {
-        margin: auto;
-    }
-    .week-table p {
-        margin: auto;
-    }
+  .schedule {
+    height: 450px;
+  }
+  .week-table {
+    flex-direction: column;
+  }
+  .week-table div {
+    flex-direction: row;
+    height: 40px;
+    width: 400px;
+    justify-content: space-around;
+  }
+  .week-table h3 {
+    margin: auto;
+  }
+  .week-table p {
+    margin: auto;
+  }
 }
 
 /* People */
 
 .people {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Oswald';
-    text-align: center;
-    margin-bottom: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald";
+  text-align: center;
+  margin-bottom: 0;
 }
 .people h2 {
-    font-size: 40px;
-    margin-bottom: 10px;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 .bio {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    border-top: 10px rgb(230, 80, 205) solid;
-    padding-bottom: 20px;
-    border-bottom: 10px rgb(230, 80, 205) solid;
-    margin-bottom: 0;
-
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 10px rgb(230, 80, 205) solid;
+  padding-bottom: 20px;
+  border-bottom: 10px rgb(230, 80, 205) solid;
+  margin-bottom: 0;
 }
 .bio div {
-    position: relative;
-    width: 200px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px black solid;
+  position: relative;
+  width: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px black solid;
 }
 .bio div::before {
-    content: "";
-    background-image: url(./Screenshot\ 2021-11-25\ at\ 11.38.29.png);
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-size: contain;
-    opacity: 0.3;
+  content: "";
+  background-image: url(./images/sprinkles.png);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-size: contain;
+  opacity: 0.3;
 }
 .bio img {
-    width: 75%;
-    position: relative;
+  width: 75%;
+  position: relative;
 }
 .bio h3 {
-    font-family: 'Parisienne';
-    font-size: 30px;
-    margin-bottom: 0;
-    border-bottom: 1px black solid;
-    position: relative;
+  font-family: "Parisienne";
+  font-size: 30px;
+  margin-bottom: 0;
+  border-bottom: 1px black solid;
+  position: relative;
 }
 
 /* Footer */
 
 footer {
-    height: 100px;
-    width: 100%;
-    background-color: rgb(77, 204, 243);
-    display: flex;
-    flex-direction: column;
-    font-family: 'Oswald';
+  height: 100px;
+  width: 100%;
+  background-color: rgb(77, 204, 243);
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
