@@ -33,6 +33,7 @@ header {
 
 header img {
   height: 100%;
+  width: 25%
   transform: scaleX(-1);
   margin-left: 10px;
 }
