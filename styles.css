@@ -19,7 +19,7 @@ body {
   width: 100vw;
   height: 100%;
   max-width: 1200px;
-  margin:auto;
+  margin: auto;
 }
 
 header {
@@ -50,36 +50,6 @@ header img {
   margin-bottom: 0;
   display: inline;
   margin: 0 20px;
-}
-@media only screen and (max-width: 970px) {
-  .wiener-6 {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 880px) {
-  .wiener-5 {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 780px) {
-  .wiener-4 {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 690px) {
-  .wiener-3 {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .wiener-2 {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .wiener-1 {
-    visibility: hidden;
-  }
 }
 
 .nav {
@@ -140,7 +110,7 @@ header img {
 /* Offerings */
 
 .offerings {
-  height: 200px;
+  height: 100px;
   display: flex;
   width: 100%;
   display: flex;
@@ -213,6 +183,7 @@ header img {
   font-size: 16px;
   margin-top: 0;
 }
+
 @media only screen and (max-width: 1050px) {
   .schedule {
     height: 450px;
@@ -295,7 +266,8 @@ header img {
 /* Footer */
 
 footer {
-  height: 100px;
+  padding: 1rem;
+  height: 60px;
   width: 100%;
   background-color: rgb(77, 204, 243);
   display: flex;

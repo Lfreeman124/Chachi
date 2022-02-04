@@ -1,4 +1,5 @@
 /* Header */
+
 *,
 *::before,
 *::after {
@@ -17,9 +18,12 @@ Html {
 body {
   width: 100vw;
   height: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
+
 header {
-  height: 50px;
+  height: 40px;
   width: 100%;
   background-color: rgb(231, 89, 189);
   border-bottom: solid 1px black;
@@ -30,61 +34,23 @@ header {
 header img {
   height: 100%;
   transform: scaleX(-1);
-  margin-left: 25px;
-  flex-shrink: 0;
+  margin-left: 10px;
 }
 .wiener {
-  max-width: 600px;
-  font-family: "Parisienne";
-  font-size: 16px;
-  margin-left: 100px;
-  display: flex;
-  align-items: end;
-  flex-wrap: wrap-reverse;
+  display: none;
 }
 .wiener p {
   margin-bottom: 0;
   display: inline;
   margin: 0 20px;
 }
-@media only screen and (max-width: 970px) {
-  .wiener-6 {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 880px) {
-  .wiener-5 {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 780px) {
-  .wiener-4 {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 690px) {
-  .wiener-3 {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .wiener-2 {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .wiener-1 {
-    visibility: hidden;
-  }
-}
 
 .nav {
   display: flex;
 }
 .nav a {
-  margin: 18px;
+  margin: 5px;
   align-self: center;
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
 }
@@ -98,7 +64,7 @@ header img {
 /* Banner */
 
 .banner {
-  height: 500px;
+  height: 300px;
   background-image: url("https://karlstad.se/imagevault/publishedmedia/ra528180d66treuzgc2t/shutterstock_520752277.jp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -124,11 +90,11 @@ header img {
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: underline;
 }
 .hero p {
-  font-size: 28px;
+  font-size: 15px;
   margin-top: 0;
   font-style: italic;
 }
@@ -136,16 +102,15 @@ header img {
 /* Offerings */
 
 .offerings {
-  height: 200px;
-  display: flex;
+  height: 40px;
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: white;
+  margin: 1rem auto;
 }
 
 .offerings div {
-  height: 75px;
+  height: 100%;
   text-align: center;
   flex-grow: 1;
   display: flex;
@@ -153,13 +118,13 @@ header img {
   align-items: center;
   background-image: url(./images/green-pattern.png);
   background-size: contain;
-  border-top: black 2px solid;
-  border-bottom: black 2px solid;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
 }
 
 .offerings a {
   border: black solid 1px;
-  padding: 10px;
+  padding: 5px;
   text-transform: uppercase;
   font-family: "Manrope", "sans-serif";
   background-color: rgb(216, 106, 238);
@@ -169,64 +134,46 @@ header img {
 /* Schedule */
 
 .schedule {
-  height: 250px;
+  height: 300px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: rgb(77, 204, 243);
 }
 
 .schedule h2 {
   font-family: "Oswald";
-  font-size: 40px;
+  font-size: 30px;
   text-transform: uppercase;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 .week-table {
   border: 1px solid black;
   display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
 .week-table div {
-  height: 100px;
-  width: 150px;
+  height: 30px;
+  width: 300px;
   font-family: "Oswald";
   text-align: center;
   border: 1px solid black;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   background-color: rgb(255, 164, 238);
 }
 
 .week-table h3 {
   size: 22px;
-  margin-bottom: 0;
+  margin: auto;
   text-decoration: underline;
 }
 .week-table p {
   font-size: 16px;
-  margin-top: 0;
-}
-@media only screen and (max-width: 1050px) {
-  .schedule {
-    height: 450px;
-  }
-  .week-table {
-    flex-direction: column;
-  }
-  .week-table div {
-    flex-direction: row;
-    height: 40px;
-    width: 400px;
-    justify-content: space-around;
-  }
-  .week-table h3 {
-    margin: auto;
-  }
-  .week-table p {
-    margin: auto;
-  }
+  margin: auto;
 }
 
 /* People */
@@ -238,16 +185,17 @@ header img {
   flex-direction: column;
   font-family: "Oswald";
   text-align: center;
-  margin-bottom: 0;
+  margin-top: 10px;
 }
 .people h2 {
-  font-size: 40px;
-  margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 5px;
 }
 .bio {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   padding-top: 20px;
   border-top: 10px rgb(230, 80, 205) solid;
   padding-bottom: 20px;
@@ -256,12 +204,11 @@ header img {
 }
 .bio div {
   position: relative;
-  width: 200px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  display: grid;
+  grid-template: 60% 40% / 60% 40%;
   border: 1px black solid;
 }
 .bio div::before {
@@ -276,21 +223,30 @@ header img {
   opacity: 0.3;
 }
 .bio img {
-  width: 75%;
+  height: 90%;
+  margin: auto;
+  grid-area: 1/1/3/2;
   position: relative;
 }
 .bio h3 {
+  grid-area: 1/2/1/3;
+  margin-top: 20px;
   font-family: "Parisienne";
   font-size: 30px;
-  margin-bottom: 0;
   border-bottom: 1px black solid;
   position: relative;
+}
+
+.bio p {
+  font-size: 1.5rem;
+  grid-area: 2/2/3/3;
 }
 
 /* Footer */
 
 footer {
-  height: 100px;
+  padding: 1rem;
+  height: 60px;
   width: 100%;
   background-color: rgb(77, 204, 243);
   display: flex;
